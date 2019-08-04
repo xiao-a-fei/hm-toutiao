@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-import ElementUI from 'element-ui'
+import './styles/index.less'
 import router from './router/router'
+import ElementUI from 'element-ui'
+import axios from 'axios'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 new Vue({
